@@ -105,7 +105,7 @@ pipeline {
             withCredentials([usernamePassword(credentialsId: 'git-cred', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                 sh """
                 git config --global user.email "your-email@example.com"
-                git config --global user.name "Aditya Jaiswal"
+                git config --global user.name "Pratham Patel"
                 git remote set-url origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/jaiswaladi246/Multi-Tier-Java.git
                 git pull origin main
                 git add ds.yml
